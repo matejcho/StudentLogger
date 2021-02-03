@@ -1,0 +1,16 @@
+﻿
+<h1>Enrolled Student per Course</h1>
+
+
+<label class="display-4">Course Name: <span style="font-weight:700"> @ViewBag.Name </span></label>
+<p></p>
+@foreach (var item in ViewBag.Enrolled)
+{
+    <label >Student Name <span style="font-weight:700"> @item.Student.Name </span></label>
+    <br />
+    <label >Student Surname <span style="font-weight:700"> @item.Student.Surname </span></label>
+    <br />
+    <label >Student Enrollment Date <span style="font-weight:700"> @item.Student.StudentEnrolledDate </span></label>
+
+
+}
